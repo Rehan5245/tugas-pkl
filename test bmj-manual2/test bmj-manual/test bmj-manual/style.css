@@ -1,0 +1,567 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(
+      to right,
+      rgba(116, 27, 186, 0.8),
+      rgba(255, 0, 255, 0.6)
+    ),
+    url("./images/1.jpeg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.image-box {
+  border: 3px solid #fff;
+  display: inline-block;
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 5px;
+  max-width: 100%;
+  width: 400px;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bottom-section {
+  background: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 15px;
+  }
+
+  .image-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 40px 10px;
+  }
+
+  .image-box {
+    width: 100%;
+  }
+}
+
+.why-choose-us {
+  background-color: #fff;
+}
+
+.why-choose-us h2 {
+  color: #6f42c1; /* Ungu elegan */
+}
+
+.why-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsiveness tambahan */
+@media (max-width: 768px) {
+  .why-choose-us h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .why-choose-us li {
+    font-size: 0.95rem;
+  }
+
+  .why-image {
+    margin-top: 2rem;
+    max-width: 90%;
+  }
+}
+
+.product-section {
+  background-color: #f5f5f5; /* abu-abu muda */
+}
+
+.product-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary-to-outline:hover {
+  color: #0d6efd !important;
+  background-color: transparent !important;
+  border-color: #0d6efd !important;
+}
+
+/* .product-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  } */
+
+.product-img {
+  width: 100%;
+  height: 490px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.btn-orange {
+  background-color: #fd7e14;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-orange:hover {
+  background-color: #e06a0b;
+  color: white;
+}
+
+/* @media (max-width: 768px) {
+    .product-img {
+      height: 500px;
+    }
+  } */
+
+@media (max-width: 576px) {
+  .product-img {
+    height: 500px;
+  }
+}
+
+.testimonial-section {
+  background-color: #ffffff;
+}
+
+.testimonial-img {
+  max-height: 400px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-img:hover {
+  transform: scale(1.03);
+}
+
+.carousel-item {
+  transition: transform 0.7s ease-in-out;
+  text-align: center;
+}
+
+/* Tambahan responsif khusus untuk testimonial */
+@media (max-width: 991px) {
+  .testimonial-section .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .testimonial-section .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.gallery-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Fleksibel! */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Desktop & Mobile */
+.gallery-item {
+  background: rgb(51, 70, 240);
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 550px; /* Fixed height */
+  object-fit: fill;
+  display: block;
+}
+
+/* Teks di bawah gambar */
+.gallery-item p {
+  color: #ddd;
+  margin: 10px;
+  padding: 0;
+}
+
+/* Media Query untuk Mobile */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 kolom */
+    padding: 10px;
+    gap: 15px;
+  }
+}
+
+.faq-section {
+  max-width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  color: #3478f7;
+  background: #f5f5f5;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.faq-question:hover {
+  background: #e9e9e9;
+}
+.faq-question .question-text:hover {
+  text-decoration: underline;
+}
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  padding-left: 10px;
+}
+
+.faq-answer p {
+  font-size: 1.1rem;
+}
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+.sub-toggle {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trust-stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2c2c2c;
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.stat {
+  margin: 10px;
+  flex: 1 1 30%; /* Allow items to grow and shrink */
+  max-width: 30%; /* Set a maximum width */
+  min-width: 150px;
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.stat h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.stat .number {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.stat .label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+/* Warning Box */
+.warning-box {
+  border: 3px dashed red;
+  background-color: #ffde00;
+  color: #b10000;
+  padding: 25px;
+  margin: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.warning-box p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+.title {
+  justify-content: center;
+  padding: 10%;
+}
+.office-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.card-kiri {
+  flex: 1 1 300px;
+  max-width: 320px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: auto; /* 👈 bikin dia tetap di tengah */
+}
+
+.office-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.maps {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maps iframe {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: 320px;
+  width: 100%;
+}
+
+
+/* 👇 Tambahkan media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .office-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-kiri,
+  .maps iframe {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .maps {
+    margin-top: 15px;
+    justify-content: center;
+  }
+}
+
+.contact-section {
+  padding: 50px 20px;
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+
+
+.contact-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.phone {
+  color: red;
+}
+.whatsapp {
+  color: green;
+}
+.telegram {
+  color: #0088cc;
+}
+
+.contact-number {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-phone {
+  background-color: red;
+}
+.btn-whatsapp {
+  background-color: green;
+}
+.btn-telegram {
+  background-color: #0088cc;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+}
+
+.whatsapp-button img {
+  width: 60px;
+}
+.title-office{
+  text-align: center;
+  padding: 30px;
+}
+.footer {
+  margin-top: 5%;
+  background-color: #3f3e3e;
+  color: #ffffff;
+  padding: 30px 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-about,
+.footer-social {
+  flex: 1 1 250px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff33;
+  font-size: 13px;
+  justify-content: space-between;
+  display: flex;
+}
